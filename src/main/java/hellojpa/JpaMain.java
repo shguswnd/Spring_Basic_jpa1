@@ -60,11 +60,21 @@ public class JpaMain {
             System.out.println("result = " + (findMember1 == findMember2));
             */
 
+/*
             Member member1 = new Member(150L, "A");
             Member member2 = new Member(160L, "B");
 
             em.persist(member1);
             em.persist(member2);
+*/
+
+            //flush
+/*
+            Member member = new Member(200L, "member200");
+            em.persist(member);
+
+            em.flush();
+*/
 
             tx.commit();
 
